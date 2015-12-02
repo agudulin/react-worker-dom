@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React Worker DOM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+    .btn-default,
+    .btn-default:hover,
+    .btn-default:focus {
+        color: #333;
+        text-shadow: none;
+        background-color: #fff;
+        border: 1px solid #fff;
+        margin: 1em;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        background-color: #333;
+    }
+    
+    body {
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+    }
+    
+    .site-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    }
+    
+    .site-wrapper-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .cover-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .inner {
+        padding: 30px;
+    }
+    
+    .cover {
+        padding: 0 20px;
+    }
+    
+    .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="inner cover">
+                    <h1 class="cover-heading">React Worker Dom</h1>
+                    <br/>
+                    <br/>
+                    <p class="lead">
+                        A react custom renderer using Web Workers.
+                        <br/> An experiment to find out if Web Workers will make React render even faster ?
+                    </p>
+                    <br/>
+                    <p class="lead">
+                        <h2> Check out the examples</h2>
+                        <br/>
+                        <a href="dist/index.html?worker=true&rows=20" class="btn btn-lg btn-default">With Web workers &raquo;</a>
+                        <a href="dist/index.html?worker=false&rows=20" class="btn btn-lg btn-default">Without Web workers &raquo;</a>
+                    </p>
+                    <p>Check out the <a href="http://github.com/web-perf/react-worker-dom">github repo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
